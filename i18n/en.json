@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Luiz Henrique Soares"
+		],
+		"last-updated": "2012-09-21",
+		"locale": "en",
+		"message-documentation": "qqq",
+		"AnotherMetadata": "AnotherMedatadataValue"
+	},
+	"welcome": "Welcome!",
+	"appname-title": "Example Application",
+	"appname-sub-title": "An example application with jquery.i18n",
+	"appname-header-introduction": "Introduction",
+	"appname-about": "About this application",
+	"appname-footer": "Footer text"
+}
