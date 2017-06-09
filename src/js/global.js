@@ -1,16 +1,17 @@
  var set_locale_to = function (locale) {
-     console.log(locale);
+     console.log(navigator.language);
+
      $.i18n().locale = locale;
      $('#welcome').text($.i18n('welcome'));
  };
 
-
- jQuery(function () {
+ $(function () {
      $.i18n().load({
          'en': '../../i18n/en.json',
-         'pt-br': '../../i18n/pt-br.json'
+         'pt-BR': '../../i18n/pt-br.json'
      }).done(function () {
-         set_locale_to(url('?locale'));
+         var language = navigator.language;
+         set_locale_to(language);
 
          History.Adapter.bind(window, 'statechange', function () {
              set_locale_to(url('?locale'));
